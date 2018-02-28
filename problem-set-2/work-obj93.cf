@@ -1,0 +1,21 @@
+v 4
+file . "Xand_tb.vhd" "91cf38151d641d4d5cad61dd37d973942dbe11c1" "20180227174114.204":
+  entity xand_tb at 1( 0) + 0 on 51;
+  architecture behavior of xand_tb at 11( 235) + 0 on 52;
+file . "example.vhd" "62b6383064cb8da2378b7cebfd3c9f48ba653854" "20180227171720.858":
+  entity example at 1( 0) + 0 on 37;
+  architecture synthetic of example at 12( 135) + 0 on 38;
+file . "lab2-gates.vhd" "fb1aa792db18cc6edd07c07c10b5e9384d50cebe" "20180227162804.753":
+  entity gateand at 4( 16) + 0 on 23;
+  architecture behavioral of gateand at 15( 156) + 0 on 24;
+  entity gateor at 23( 258) + 0 on 25;
+  architecture behavioral of gateor at 34( 396) + 0 on 26;
+  entity gatexor at 43( 498) + 0 on 27;
+  architecture behavioral of gatexor at 54( 638) + 0 on 28;
+  entity gatenot at 62( 741) + 0 on 29;
+  architecture behavioral of gatenot at 72( 865) + 0 on 30;
+  entity mux at 80( 986) + 0 on 31;
+  architecture zachowanie of mux at 91( 1142) + 0 on 32;
+file . "example_tb.vhd" "d97e65ff66e8a488a02d1a54c76e1c07d2a24c8a" "20180227164629.309":
+  entity example_tb at 1( 0) + 0 on 33;
+  architecture behavior of example_tb at 12( 244) + 0 on 34;

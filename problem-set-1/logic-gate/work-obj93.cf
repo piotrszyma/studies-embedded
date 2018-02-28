@@ -1,0 +1,7 @@
+v 4
+file . "gate.vhdl" "cf2d897f553c2eee9a65dc72930da0fe0b7f1d7b" "20180220172129.992":
+  entity logic_gate at 1( 0) + 0 on 29;
+  architecture rtl of logic_gate at 5( 109) + 0 on 30;
+file . "gate_tb.vhdl" "03828d233e26985d64a3971066e0e475e7cf34ce" "20180220172145.827":
+  entity logic_gate_tb at 2( 30) + 0 on 31;
+  architecture behav of logic_gate_tb at 5( 74) + 0 on 32;
