@@ -51,43 +51,6 @@ BEGIN
       wait for 100 ns;	
 
       wait for period*10;
-
-	-- silly way to test all states... 
-	a <= '0';
-	b <= '0';
-	c <= '1';
-	wait for period;
-		
-	a <= '0';
-	b <= '1';
-	c <= '0';
-	wait for period;
-
-	a <= '0';
-	b <= '1';
-	c <= '1';
-	wait for period;
-
-	a <= '1';
-	b <= '0';
-	c <= '0';
-	wait for period;
-
-	a <= '1';
-	b <= '0';
-	c <= '1';
-	wait for period;
-
-	a <= '1';
-	b <= '1';
-	c <= '0';
-	wait for period;
-
-	a <= '1';
-	b <= '1';
-	c <= '1';
-
-	wait for 10*period;
 		
 	-- another way to do this... 
 	for i in 0 to 6 loop

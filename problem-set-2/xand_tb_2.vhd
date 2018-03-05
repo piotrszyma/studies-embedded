@@ -32,7 +32,8 @@ ARCHITECTURE behavior OF Xand_tb IS
 BEGIN
  
 	-- instantiate the Unit Under Test (UUT)
-   uut : Xand generic map (width => 4)
+   uut: Xand is 
+   generic map (width => 4)
    PORT MAP (
           a => a,
           b => b,
