@@ -51,10 +51,21 @@ BEGIN
       -- let it run 
       wait for 100 ns;
       -- apply reset 
-		  rst <= '1';
-      wait for 50 ns;
+      rst <= '1';
+      -- let it generate 195
+      wait for clk_period * 35;
       -- and let it go
       rst <= '0';
+      
+      wait for 100 ns;
+      
+      rst <= '1';
+
+      -- let it generate 182
+      wait for clk_period * 22;
+      -- and let it go
+      rst <= '0';
+      
       wait;
    END PROCESS;	
 END;
