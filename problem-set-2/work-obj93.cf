@@ -1,24 +1,37 @@
 v 4
-file . "Xand_tb.vhd" "c92193321ca2db9e89f2540c30c8868c371bf9df" "20180305193309.106":
-  entity xand_tb at 1( 0) + 0 on 63;
-  architecture behavior of xand_tb at 12( 238) + 0 on 64;
-file . "example.vhd" "62b6383064cb8da2378b7cebfd3c9f48ba653854" "20180227171720.858":
-  entity example at 1( 0) + 0 on 37;
-  architecture synthetic of example at 12( 135) + 0 on 38;
-file . "lab2-gates.vhd" "fb1aa792db18cc6edd07c07c10b5e9384d50cebe" "20180227162804.753":
-  entity gateand at 4( 16) + 0 on 23;
-  architecture behavioral of gateand at 15( 156) + 0 on 24;
-  entity gateor at 23( 258) + 0 on 25;
-  architecture behavioral of gateor at 34( 396) + 0 on 26;
-  entity gatexor at 43( 498) + 0 on 27;
-  architecture behavioral of gatexor at 54( 638) + 0 on 28;
-  entity gatenot at 62( 741) + 0 on 29;
-  architecture behavioral of gatenot at 72( 865) + 0 on 30;
-  entity mux at 80( 986) + 0 on 31;
-  architecture zachowanie of mux at 91( 1142) + 0 on 32;
-file . "example_tb.vhd" "d97e65ff66e8a488a02d1a54c76e1c07d2a24c8a" "20180227164629.309":
-  entity example_tb at 1( 0) + 0 on 33;
-  architecture behavior of example_tb at 12( 244) + 0 on 34;
+file . "task5_tb.vhd" "05b703c9850c9891d37dc917f83557ca766b3c87" "20180306164636.763":
+  entity task5_tb at 1( 0) + 0 on 95;
+  architecture behavior of task5_tb at 12( 240) + 0 on 96;
+file . "task5.vhdl" "34ac479ab91497ea95c6730ab589bd0e05ecd2fe" "20180306164325.354":
+  entity task5 at 1( 0) + 0 on 91;
+  architecture synthetic of task5 at 12( 139) + 0 on 92;
 file . "Xand.vhd" "7dc9611a1246dc276934e8ec6741a233571a05af" "20180305193253.473":
   entity xand at 1( 0) + 0 on 61;
   architecture behavioral of xand at 15( 254) + 0 on 62;
+file . "example_tb.vhd" "d97e65ff66e8a488a02d1a54c76e1c07d2a24c8a" "20180227164629.309":
+  entity example_tb at 1( 0) + 0 on 33;
+  architecture behavior of example_tb at 12( 244) + 0 on 34;
+file . "lab2-gates.vhd" "fb1aa792db18cc6edd07c07c10b5e9384d50cebe" "20180227162804.753":
+  entity gateor at 23( 258) + 0 on 25;
+  architecture behavioral of gateor at 34( 396) + 0 on 26;
+  entity mux at 80( 986) + 0 on 31;
+  architecture zachowanie of mux at 91( 1142) + 0 on 32;
+file . "example.vhd" "62b6383064cb8da2378b7cebfd3c9f48ba653854" "20180227171720.858":
+  entity example at 1( 0) + 0 on 37;
+  architecture synthetic of example at 12( 135) + 0 on 38;
+file . "Xand_tb.vhd" "c92193321ca2db9e89f2540c30c8868c371bf9df" "20180305193309.106":
+  entity xand_tb at 1( 0) + 0 on 63;
+  architecture behavior of xand_tb at 12( 238) + 0 on 64;
+file . "task5_gates.vhdl" "87ad9673181c555daf6108ea8978a5033dce2e28" "20180306163047.599":
+  entity gatexor at 4( 16) + 0 on 67;
+  architecture behavioral of gatexor at 15( 156) + 0 on 68;
+  entity gatenxor at 23( 260) + 0 on 69;
+  architecture behavioral of gatenxor at 34( 402) + 0 on 70;
+  entity gateand at 41( 510) + 0 on 71;
+  architecture behavioral of gateand at 52( 650) + 0 on 72;
+  entity gatenand at 60( 754) + 0 on 73;
+  architecture behavioral of gatenand at 71( 896) + 0 on 74;
+  entity gatenot at 78( 1004) + 0 on 75;
+  architecture behavioral of gatenot at 88( 1126) + 0 on 76;
+  entity gatehnand at 94( 1228) + 0 on 77;
+  architecture behavioral of gatehnand at 105( 1372) + 0 on 78;
