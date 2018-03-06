@@ -60,7 +60,7 @@ BEGIN
 
 
       	-- another way to do this... 
-      for i in 0 to 6 loop
+      for i in 0 to 15 loop
     -- w zaleznosci od tego, jak zadeklarowano sygnal 'abc',
     --     mozna go zwiekszyc na rozne sposoby
     -- sprawdz, ktory pasuje do ktorej deklaracji
