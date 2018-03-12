@@ -52,7 +52,10 @@ BEGIN
       wait for 100 ns;
       -- apply reset 
       rst <= '1';
+      -- clk period is 20
       -- let it generate 195
+      -- 10100000 = 160
+      -- 160 + 35 = 195
       wait for clk_period * 35;
       -- and let it go
       rst <= '0';
@@ -60,7 +63,8 @@ BEGIN
       wait for 100 ns;
       
       rst <= '1';
-
+      -- 10100000 = 160
+      -- 160 + 22 = 182
       -- let it generate 182
       wait for clk_period * 22;
       -- and let it go

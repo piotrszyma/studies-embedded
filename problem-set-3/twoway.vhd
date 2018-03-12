@@ -19,11 +19,13 @@ BEGIN
 		IF (clk'event AND clk='1') THEN
 			IF dir = '1' THEN
 				x := x+1;
-				IF x > 2 ** NBit -1 THEN 
+				-- while x < 2 ** NBit - 1, x ++
+				IF x  > 2 ** NBit - 2 THEN 
 					dir := '0';
 				END IF;
 			ELSE
 				x := x-1;
+				-- while x > 0, x --
 				IF x = 0 THEN
 					dir := '1';
 				END IF;
