@@ -1,13 +1,19 @@
 v 4
-file . "twoway_tb.vhd" "e80d038bbf589b75e21b79a88a067a79885a31fb" "20180312200512.297":
-  entity twoway_tb at 1( 0) + 0 on 33;
-  architecture behavior of twoway_tb at 8( 108) + 0 on 34;
-file . "simple.vhd" "81db2d9ff2073303afe39078dd2351b493555eb9" "20180306170309.090":
-  entity simple at 12( 387) + 0 on 13;
-  architecture simple_counter_arch of simple at 26( 737) + 0 on 14;
+file . "lfsr.vhd" "0c7f7aff63b6e89fb8f7ed3ffaf6c216ee03327f" "20180313163518.653":
+  entity lfsr at 1( 0) + 0 on 59;
+  architecture behavioral of lfsr at 12( 216) + 0 on 60;
+file . "twoway.vhd" "0cb8222ccadf2cc0c066b30d277b6cb860293ebf" "20180313150716.629":
+  entity twoway at 1( 0) + 0 on 39;
+  architecture behavioral of twoway at 13( 272) + 0 on 40;
 file . "simple_tb.vhd" "d402055c7ab2475453a4b73389dd8865d657c832" "20180306173439.868":
   entity simple_tb at 1( 0) + 0 on 21;
   architecture behavior of simple_tb at 8( 108) + 0 on 22;
-file . "twoway.vhd" "0d03d419bff03d6fddeed906767bbbc2bd04e719" "20180312200502.367":
-  entity twoway at 1( 0) + 0 on 31;
-  architecture behavioral of twoway at 13( 272) + 0 on 32;
+file . "simple.vhd" "81db2d9ff2073303afe39078dd2351b493555eb9" "20180306170309.090":
+  entity simple at 12( 387) + 0 on 13;
+  architecture simple_counter_arch of simple at 26( 737) + 0 on 14;
+file . "twoway_tb.vhd" "e80d038bbf589b75e21b79a88a067a79885a31fb" "20180313150729.882":
+  entity twoway_tb at 1( 0) + 0 on 41;
+  architecture behavior of twoway_tb at 8( 108) + 0 on 42;
+file . "lfsr_tb.vhd" "0115c7851850cf1680d29fe9b9f43005acbd54ab" "20180313171819.673":
+  entity lfsr_tb at 1( 0) + 0 on 83;
+  architecture behavior of lfsr_tb at 10( 135) + 0 on 84;

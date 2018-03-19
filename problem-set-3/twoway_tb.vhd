@@ -12,7 +12,7 @@ ARCHITECTURE behavior OF twoway_tb IS
     PORT(
          clk : IN  std_logic;
          q : out  STD_LOGIC_VECTOR (7 downto 0)
-                := (OTHERS => '0')  -- stan power-on
+                := (OTHERS => '1')  -- stan power-on
         );
     END COMPONENT;
     

@@ -20,7 +20,7 @@ BEGIN
 			IF dir = '1' THEN
 				x := x+1;
 				-- while x < 2 ** NBit - 1, x ++
-				IF x = 2 ** NBit - 2 THEN 
+				IF x = 2 ** NBit - 1 THEN 
 					dir := '0';
 				END IF;
 			ELSE
