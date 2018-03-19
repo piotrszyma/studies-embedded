@@ -82,8 +82,27 @@ BEGIN
    begin		
       
 		-- input your code here
+			data_in <= X"A0";
 
-      wait;
+			wait for clk_period/5;
+
+      for I in 0 to 7 loop			
+				address <= std_logic_vector(to_unsigned(I, address'length));
+				wait for clk_period;
+				assert crc_out = data_out_a0 severity failure;
+			end loop;
+			
+			data_in <= crc_out;
+			wait for clk_period;
+			data_in <= X"66";
+
+      for I in 0 to 7 loop			
+				address <= std_logic_vector(to_unsigned(I, address'length));
+				wait for clk_period;
+				assert crc_out = data_out_66 severity failure;
+			end loop;
+
+			wait;
    end process;
 
 END;
