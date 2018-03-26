@@ -5,6 +5,12 @@ file . "vhdl_txt.vhd" "5c1109f0233bfbf6358a7751b68853bd9dcb3e48" "20180320162837
 file . "statemachine.vhd" "56297a7e5a5dfe554203b17ff88151769a282b12" "20180326193139.715":
   entity statemachine at 2( 1) + 0 on 99;
   architecture flow of statemachine at 15( 225) + 0 on 100;
-file . "statemachine_tb.vhd" "317e187e8c1a7d9b487bc28b7b188477e7b51a51" "20180326193141.522":
-  entity statemachine_tb at 1( 0) + 0 on 101;
-  architecture behavior of statemachine_tb at 10( 169) + 0 on 102;
+file . "statemachine_tb.vhd" "42d7d6abd8fbb68fc839a2d2e02f6f62554085b6" "20180326195837.858":
+  entity statemachine_tb at 1( 0) + 0 on 109;
+  architecture behavior of statemachine_tb at 10( 169) + 0 on 110;
+file . "statemachine2.vhd" "fa0b5f9cced804bf9e0699537e4a34e1010bf2bc" "20180326200715.314":
+  entity statemachine2 at 2( 1) + 0 on 171;
+  architecture flow of statemachine2 at 17( 251) + 0 on 172;
+file . "statemachine2_tb.vhd" "5980cf4cc0ca0ec4bc00a47cff86e9aef52f08fb" "20180326200716.436":
+  entity statemachine2_tb at 1( 0) + 0 on 173;
+  architecture behavior of statemachine2_tb at 10( 171) + 0 on 174;
