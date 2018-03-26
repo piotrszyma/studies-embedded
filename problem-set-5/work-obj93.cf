@@ -1,16 +1,19 @@
 v 4
-file . "vhdl_txt.vhd" "5c1109f0233bfbf6358a7751b68853bd9dcb3e48" "20180320162837.825":
-  package txt_util at 5( 63) + 0 on 13 body;
-  package body txt_util at 93( 2544) + 0 on 14;
-file . "statemachine.vhd" "56297a7e5a5dfe554203b17ff88151769a282b12" "20180326193139.715":
-  entity statemachine at 2( 1) + 0 on 99;
-  architecture flow of statemachine at 15( 225) + 0 on 100;
-file . "statemachine_tb.vhd" "42d7d6abd8fbb68fc839a2d2e02f6f62554085b6" "20180326195837.858":
-  entity statemachine_tb at 1( 0) + 0 on 109;
-  architecture behavior of statemachine_tb at 10( 169) + 0 on 110;
-file . "statemachine2.vhd" "fa0b5f9cced804bf9e0699537e4a34e1010bf2bc" "20180326200715.314":
-  entity statemachine2 at 2( 1) + 0 on 171;
-  architecture flow of statemachine2 at 17( 251) + 0 on 172;
+file . "statemachine3.vhd" "a7e6c37e5129d994878ab18feb79f7a05c0b02bb" "20180326202329.155":
+  entity statemachine3 at 2( 1) + 0 on 183;
+  architecture flow of statemachine3 at 15( 227) + 0 on 184;
 file . "statemachine2_tb.vhd" "5980cf4cc0ca0ec4bc00a47cff86e9aef52f08fb" "20180326200716.436":
   entity statemachine2_tb at 1( 0) + 0 on 173;
   architecture behavior of statemachine2_tb at 10( 171) + 0 on 174;
+file . "statemachine2.vhd" "fa0b5f9cced804bf9e0699537e4a34e1010bf2bc" "20180326200715.314":
+  entity statemachine2 at 2( 1) + 0 on 171;
+  architecture flow of statemachine2 at 17( 251) + 0 on 172;
+file . "statemachine_tb.vhd" "42d7d6abd8fbb68fc839a2d2e02f6f62554085b6" "20180326195837.858":
+  entity statemachine_tb at 1( 0) + 0 on 109;
+  architecture behavior of statemachine_tb at 10( 169) + 0 on 110;
+file . "vhdl_txt.vhd" "5c1109f0233bfbf6358a7751b68853bd9dcb3e48" "20180320162837.825":
+  package txt_util at 5( 63) + 0 on 13 body;
+  package body txt_util at 93( 2544) + 0 on 14;
+file . "statemachine3_tb.vhd" "530a552741e90c5f4c467ac59805e5f80da50da5" "20180326202632.283":
+  entity statemachine3_tb at 1( 0) + 0 on 207;
+  architecture behavior of statemachine3_tb at 10( 171) + 0 on 208;
