@@ -80,7 +80,7 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin		
-      
+
 		-- input your code here
 			data_in <= X"A0";
 
@@ -94,6 +94,7 @@ BEGIN
 			
 			data_in <= crc_out;
 			wait for clk_period;
+			
 			data_in <= X"66";
 
       for I in 0 to 7 loop			

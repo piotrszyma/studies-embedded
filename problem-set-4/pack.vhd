@@ -19,8 +19,9 @@ end pack;
 package body pack is
 
  function nextCRC
-  ( data		: std_logic_vector(7 downto 0);
-   prevCRC 	: std_logic_vector(7 downto 0)
+  ( 
+		data		: std_logic_vector(7 downto 0);
+   	prevCRC 	: std_logic_vector(7 downto 0)
   )
   return std_logic_vector is
   
