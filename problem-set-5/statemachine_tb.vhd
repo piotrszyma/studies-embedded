@@ -10,8 +10,9 @@ END statemachine_tb;
 ARCHITECTURE behavior OF statemachine_tb IS 
     COMPONENT statemachine
     PORT(
-         clk : IN  std_logic;
-         pusher : IN  std_logic;
+         clk: IN  std_logic;
+         pusher: IN  std_logic;
+         reset: IN std_logic;
          driver : OUT  std_logic_vector(1 downto 0)
         );
     END COMPONENT;
@@ -20,6 +21,7 @@ ARCHITECTURE behavior OF statemachine_tb IS
    --Inputs
    signal clk : std_logic := '0';
    signal pusher : std_logic := '0';
+   signal reset : std_logic := '0';
 
  	--Outputs
    signal driver : std_logic_vector(1 downto 0);
@@ -33,6 +35,7 @@ BEGIN
    uut: statemachine PORT MAP (
           clk => clk,
           pusher => pusher,
+          reset => reset,
           driver => driver
         );
 
@@ -57,17 +60,35 @@ BEGIN
 		pusher <= '1';				   -- allow state transitions now
 
 		wait for clk_period;	-- let some states transit to some other... 
-	
+  	
 		assert driver = "01"			-- test what we've got
 		  report "expected state '01' on driver not achieved -- got '" & str(driver) & "'";
 
-		wait for clk_period * 3;
+    for I in 0 to 2 loop
+      print(hstr(driver));
+  		wait for clk_period;
+	  end loop;
+
+    print(hstr(driver));
 
 		pusher <= '0';					-- disable state transitions
 
 		assert driver = "00"
 			report "expected state '00' on driver not achieved -- got '" & str(driver) & "'";
-      wait;
+
+    wait for clk_period;
+
+    reset <= '1';
+
+    wait for clk_period;
+
+		assert driver = "00"
+			report "expected state '00' on driver not achieved -- got '" & str(driver) & "'";
+
+    print(hstr(driver));
+
+    reset <= '0';
+    
    end process;
 
 END;

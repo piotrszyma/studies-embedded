@@ -6,6 +6,7 @@ entity statemachine is
   port(
 	clk:     in std_logic;
 	pusher:  in std_logic;
+	reset:	 in std_logic;
 	driver : out std_logic_vector(1 downto 0) := "00"
   );
   
@@ -19,11 +20,13 @@ begin
 
 state_advance: process(clk)
 begin
-  if rising_edge(clk) then
-    if pusher = '1' then
-     stan_teraz <= stan_potem;
-	 end if;
-  end if;
+	if rising_edge(clk) then
+		if reset = '1' then
+			stan_teraz <= S0;
+		elsif pusher = '1' then
+			stan_teraz <= stan_potem;
+		end if;
+	end if;
 end process;
 
 next_state: process(stan_teraz)
