@@ -46,10 +46,10 @@ begin
 				else
 					stan_potem <= S3;
 				end if;
-				driver <= "10";				
+				driver <= "10";
 	  when S3 => 
 				stan_potem <= S0;
-				driver <= "11";				
+				driver <= "11";
    end case;
 end process;
 

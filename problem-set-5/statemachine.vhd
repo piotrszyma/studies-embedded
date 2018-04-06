@@ -18,12 +18,12 @@ architecture Flow of statemachine is
   signal stan_potem : stan := S0;
 begin
 
-state_advance: process(clk)
+state_advance: process(clk, reset)
 begin
-	if rising_edge(clk) then
-		if reset = '1' then
-			stan_teraz <= S0;
-		elsif pusher = '1' then
+	if reset = '1' then
+		stan_teraz <= S0;
+	elsif rising_edge(clk) then
+		if pusher = '1' then
 			stan_teraz <= stan_potem;
 		end if;
 	end if;
